@@ -1,0 +1,34 @@
+//DESKTOP
+
+//components
+@import "desktop/components/mixins";
+@import "desktop/components/variables";
+@import "desktop/components/normilize";
+@import "desktop/components/helpers";
+@import "desktop/components/base";
+@import "desktop/components/fonts";
+@import "desktop/components/icons";
+
+//pages
+@import "desktop/pages/index";
+
+//parts
+@import "desktop/parts/header";
+@import "desktop/parts/footer";
+@import "desktop/parts/background";
+@import "desktop/parts/preloader";
+
+//Mobile
+.mobile {
+  //components
+  @import "mobile/components/base";
+
+  //pages
+  @import "mobile/pages/index";
+
+  //parts
+  @import "mobile/parts/header";
+  @import "mobile/parts/footer";
+}
+
+@import "desktop/components/media";

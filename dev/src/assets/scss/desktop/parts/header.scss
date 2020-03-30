@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  background: #181818;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+.logotype {
+  width: em(40);
+  height: em(40);
+}
+
+.nav__menu {
+  &--item {
+    margin: 15px 0;
+  }
+  &--link {
+    display: block;
+    padding: 8px;
+  }
+}
