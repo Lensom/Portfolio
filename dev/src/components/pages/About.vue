@@ -1,4 +1,10 @@
-<template></template>  
+<template>
+  <div class="page page-about__wrapper">
+    <div class="page-about">
+      <h1>About page asd asda sdas dsa da sdsa dasdas dasd asd asd asd asda sd asd asd asd asda sd as</h1>
+    </div>
+  </div>
+</template>  
 
 <script>
 export default {
@@ -7,6 +13,7 @@ export default {
     let vm = this;
     setTimeout(function() {
       vm.$root.loading = false;
+      console.log(vm.$root.loading);
     }, 750);
   },
   beforeDestroy() {

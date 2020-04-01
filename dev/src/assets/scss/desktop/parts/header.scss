@@ -2,7 +2,7 @@
   position: fixed;
   width: 60px;
   height: 100%;
-  background: #181818;
+  background: $black-2;
   top: 0;
   left: 0;
   z-index: 2;
@@ -12,11 +12,23 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    padding: 15px 0;
   }
+  &.fadeInLeft {
+    animation: 1s fadeInLeft;
+    }
 }
 .logotype {
-  width: em(40);
-  height: em(40);
+  svg {
+    position: relative;
+    width: 56px;
+    height: 50px;
+    font-size: 67px;
+    left: 2px;
+  }
+  path {
+    fill: $white;
+  }
 }
 
 .nav__menu {
@@ -25,6 +37,39 @@
   }
   &--link {
     display: block;
+    position: relative;
     padding: 8px;
+    &:hover {
+      .icon {
+        color: $blueHover;
+      }
+      .helper {
+        opacity: 1;
+      }
+    }
+  }
+  
+}
+
+.social {
+  &__menu {
+    &--item {
+      margin-top: 5px;
+    }
+    &--link {
+      display: block;
+      position: relative;
+      padding: 11px;
+      &:hover {
+        .icon {
+          color: $blueHover;
+        }
+        .helper {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
+
+

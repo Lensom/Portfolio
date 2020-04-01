@@ -13,20 +13,33 @@
 
 .icon {
   font-size: 25px;
+  transition: opacity 2.3s ease;
+  &--sm {
+    font-size: 18px;
+  }
 }
 
-.icon-mail:before {
+.icon-linkedin:before {
   content: "\e900";
 }
-.icon-sport-team:before {
+.icon-instagram:before {
   content: "\e901";
 }
-.icon-thunder:before {
+.icon-gmail:before {
   content: "\e902";
 }
-.icon-user:before {
+.icon-mail:before {
   content: "\e903";
 }
-.icon-home-run:before {
+.icon-sport-team:before {
   content: "\e904";
+}
+.icon-thunder:before {
+  content: "\e905";
+}
+.icon-user:before {
+  content: "\e906";
+}
+.icon-home-run:before {
+  content: "\e907";
 }

@@ -42,7 +42,9 @@ new Vue({
             isIE: Helpers.isIE(),
             macOs: Helpers.isMac(),
             Helpers: Helpers,
-            loading: true
+            loading: true,
+            mainLoading: true,
+            animation: false
         }
     },
     created() {

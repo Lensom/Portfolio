@@ -1,11 +1,11 @@
 <template>
   <Resize id="app" class="app-layout" :class="{ 'mobile' : $root.isMobile}">
     <div class="background"></div>
-    <div class="content">
-      <Header></Header>
+    <Loader v-if="this.$root.mainLoading"></Loader>
+    <div class="content" v-else>
       <Preloader />
-      <router-view></router-view>
-
+      <Header></Header>
+      <router-view v-if="this.$root.loading == false"></router-view>
       <Footer></Footer>
     </div>
   </Resize>
@@ -16,6 +16,7 @@ import Resize from "@/components/common/Resize";
 import Header from "@/components/parts/Header";
 import Footer from "@/components/parts/Footer";
 import Preloader from "@/components/parts/Preloader";
+import Loader from "@/components/parts/Loader";
 
 export default {
   name: "app",
@@ -23,7 +24,8 @@ export default {
     Resize,
     Header,
     Footer,
-    Preloader
+    Preloader,
+    Loader
   },
   data() {
     return {};
@@ -32,6 +34,16 @@ export default {
     routerName() {
       return this.$route.name;
     }
+  },
+  mounted() {
+    this.$root.animation = true;
+    // this.$root.mainLoading = false;
+    this.$root.loading = false;
+
+    let vm = this;
+    setTimeout(function() {
+      vm.$root.mainLoading = false;
+    }, 1000);
   }
 };
 </script>
