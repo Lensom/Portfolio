@@ -10,9 +10,8 @@
 export default {
   name: "Index",
   mounted() {
-    let vm = this;
-    setTimeout(function() {
-      vm.$root.loading = false;
+    setTimeout(() => {
+      this.$root.loading = false;
     }, 750);
   },
   beforeDestroy() {

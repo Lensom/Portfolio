@@ -37,12 +37,10 @@ export default {
   },
   mounted() {
     this.$root.animation = true;
-    // this.$root.mainLoading = false;
     this.$root.loading = false;
 
-    let vm = this;
-    setTimeout(function() {
-      vm.$root.mainLoading = false;
+    setTimeout(() => {
+      this.$root.mainLoading = false;
     }, 1000);
   }
 };

@@ -10,10 +10,8 @@
 export default {
   name: "About",
   mounted() {
-    let vm = this;
-    setTimeout(function() {
-      vm.$root.loading = false;
-      console.log(vm.$root.loading);
+    setTimeout(() => {
+      this.$root.loading = false;
     }, 750);
   },
   beforeDestroy() {
