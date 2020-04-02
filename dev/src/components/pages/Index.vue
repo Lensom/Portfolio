@@ -1,12 +1,18 @@
 <template>
   <div class="page page-home__wrapper">
     <div class="page-home">
-      <h1>Home page asd Home page asdHome page asdHome page asdHome page asdHome page asdHome page asdHome page asdHome page asdHome page asd asd asd asda sd asd</h1>
+      <h1 class="title anim-typewriter">
+        Hi.
+        <br />I'm Alexey.
+      </h1>
+      <h2 class="subtitle">Front End Developer / Freelancer</h2>
     </div>
   </div>
 </template>  
 
 <script>
+import { gsap } from "gsap";
+
 export default {
   name: "Index",
   mounted() {

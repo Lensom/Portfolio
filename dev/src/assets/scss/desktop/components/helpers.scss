@@ -194,3 +194,16 @@ h1,h2,h3,h4,h5,h6, p {
   opacity: 0;
   transition: all .2 ease;
 }
+
+.title {
+  font-family: "Monument", sans-serif;
+  font-weight: 400;
+  font-size: em(76);
+}
+
+.subtitle {
+  font-family: "Monument", sans-serif;
+  font-weight: 400;
+  font-size: em(16);
+  margin: em(-3) em(3) ;
+}

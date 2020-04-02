@@ -12,7 +12,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.$root.loading = false;
-    }, 750);
+    }, 600);
   },
   beforeDestroy() {
     this.$root.loading = true;

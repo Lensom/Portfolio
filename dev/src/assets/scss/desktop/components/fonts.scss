@@ -21,3 +21,27 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Monument';
+  src: url($fontsPath + 'Monument/MonumentRegular.eot');
+  src: url($fontsPath + 'Monument/MonumentRegular.eot?#iefix') format('embedded-opentype'),
+  url($fontsPath + 'Monument/MonumentRegular.woff') format('woff'),
+  url($fontsPath + 'Monument/MonumentRegular.ttf') format('truetype'),
+  url($fontsPath + 'Monument/MonumentRegular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url($fontsPath + 'Monument/MonumentUltrabold.eot');
+  src: url($fontsPath + 'Monument/MonumentUltrabold.eot?#iefix') format('embedded-opentype'),
+  url($fontsPath + 'Monument/MonumentUltrabold.woff') format('woff'),
+  url($fontsPath + 'Monument/MonumentUltrabold.ttf') format('truetype'),
+  url($fontsPath + 'Monument/MonumentUltrabold.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

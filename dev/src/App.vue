@@ -1,5 +1,6 @@
 <template>
   <Resize id="app" class="app-layout" :class="{ 'mobile' : $root.isMobile}">
+    <CustomCursor></CustomCursor>
     <div class="background"></div>
     <Loader v-if="this.$root.mainLoading"></Loader>
     <div class="content" v-else>
@@ -19,6 +20,7 @@ import Header from "@/components/parts/Header";
 import Footer from "@/components/parts/Footer";
 import Preloader from "@/components/parts/Preloader";
 import Loader from "@/components/parts/Loader";
+import CustomCursor from "@/components/parts/CustomCursor";
 
 export default {
   name: "app",
@@ -27,7 +29,8 @@ export default {
     Header,
     Footer,
     Preloader,
-    Loader
+    Loader,
+    CustomCursor
   },
   data() {
     return {};
