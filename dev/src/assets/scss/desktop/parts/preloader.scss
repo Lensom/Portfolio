@@ -11,9 +11,9 @@
   left: 0;
   top: 0;
   width: 100%;
-  background-image: url(/static/img/movie.png);
   opacity: 1;
   &__main {
+    background-image: url(/static/img/movie.png);
     opacity: .7;
   }
   &__line {
@@ -26,13 +26,13 @@
     z-index: 1;
     &--first {
       left: 30px;
-      border-right: 5px solid $white;
+      border-right: 3px solid $white;
       transform: translateX(-100%);
       
     }
     &--second {
       right: -30px;
-      border-left: 5px solid $white;
+      border-left: 3px solid $white;
       transform: translateX(100%);
     }
   }

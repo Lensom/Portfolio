@@ -5,8 +5,10 @@
     <div class="content" v-else>
       <Preloader />
       <Header></Header>
-      <router-view v-if="this.$root.loading == false"></router-view>
-      <Footer></Footer>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+      <!-- <Footer></Footer> -->
     </div>
   </Resize>
 </template>
