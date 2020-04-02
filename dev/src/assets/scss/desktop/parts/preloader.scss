@@ -26,12 +26,14 @@
     z-index: 1;
     &--first {
       left: 30px;
+      // left: 0;
       border-right: 3px solid $white;
       transform: translateX(-100%);
       
     }
     &--second {
       right: -30px;
+      // right: 0;
       border-left: 3px solid $white;
       transform: translateX(100%);
     }
