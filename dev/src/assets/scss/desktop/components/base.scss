@@ -6,10 +6,9 @@ html, body {
   height: 100%;
   margin: 0;
   line-height: 1;
-  background: #fff;
+  background: $white;
   color: $white;
   -webkit-overflow-scrolling: touch;
-
 }
 
 .content {
@@ -32,22 +31,6 @@ html, body {
 
 .page{
   overflow: hidden;
-}
-
-h1 {
-  font-size: em(45);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: em(25);
-  color: $white;
-  line-height: em(20);
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-style: italic;
 }
 
 .image-center {
@@ -126,7 +109,6 @@ a {
   &:hover {
     //text-decoration: underline;
   }
-
   &.underline {
     text-decoration: underline;
     &:hover {

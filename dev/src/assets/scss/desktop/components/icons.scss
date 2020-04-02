@@ -12,10 +12,10 @@
 }
 
 .icon {
-  font-size: 25px;
+  font-size: em(25);
   transition: opacity 2.3s ease;
   &--sm {
-    font-size: 18px;
+    font-size: em(18);
   }
 }
 

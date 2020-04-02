@@ -1,7 +1,6 @@
 .header {
   position: fixed;
-  width: 60px;
-  // width: em(60);
+  width: em(60);
   height: 100%;
   background: $black-2;
   top: 0;
@@ -13,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 15px 0;
+    padding: em(15) 0;
   }
   &.fadeInLeft {
     animation: 1s fadeInLeft;
@@ -22,24 +21,26 @@
 .logotype {
   svg {
     position: relative;
-    width: 56px;
-    height: 50px;
-    font-size: 67px;
-    left: 2px;
+    width: em(56);
+    height: em(50);
+    left: em(2);
   }
   path {
     fill: $white;
+  }
+  a {
+    display: block;
   }
 }
 
 .nav__menu {
   &--item {
-    margin: 15px 0;
+    margin: em(15) 0;
   }
   &--link {
     display: block;
     position: relative;
-    padding: 8px;
+    padding: em(8);
     &:hover {
       .icon {
         color: $blueHover;
@@ -55,12 +56,12 @@
 .social {
   &__menu {
     &--item {
-      margin-top: 5px;
+      margin-top: em(5);
     }
     &--link {
       display: block;
       position: relative;
-      padding: 11px;
+      padding: em(11);
       &:hover {
         .icon {
           color: $blueHover;
@@ -72,5 +73,3 @@
     }
   }
 }
-
-
