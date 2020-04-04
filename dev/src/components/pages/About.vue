@@ -1,7 +1,24 @@
 <template>
   <div class="page page-about__wrapper">
     <div class="page-about">
-      <h1>About page asd asda sdas dsa da sdsa dasdas dasd asd asd asd asda sd asd asd asd asda sd as</h1>
+      <h1 class="title">
+        <span class="title__word">About me.</span>
+      </h1>
+
+      <div class="page-about__text">
+        <p class="text">
+          I am a Front End developer based in Ukraine. I have been developing since 2017 and still study and improve my skills.
+          National and international customers have relied on me for development, implementation, and management of their digital products.
+        </p>
+        <p class="text">
+          As a freelancer, I works also with web agencies, companies,
+          startups and individuals to create a awesome websites and applications for the digital business.
+        </p>
+        <p class="text">
+          You can
+          <router-link class="page-about__link" to="/contact">contact me here</router-link>, or in social networks.
+        </p>
+      </div>
     </div>
   </div>
 </template>  
@@ -13,6 +30,11 @@ export default {
     setTimeout(() => {
       this.$root.loading = false;
     }, 600);
+    var tl = new TimelineMax();
+    tl.delay(0.8).from(".title__word", 1.5, {
+      y: "100%",
+      ease: Power4.easeOut
+    });
   },
   beforeDestroy() {
     this.$root.loading = true;

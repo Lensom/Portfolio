@@ -1,7 +1,155 @@
 <template>
   <div class="page page-skills__wrapper">
     <div class="page-skills">
-      <h1>Skills page asd asda sdas dsa da sdsa dasdas dasd asd asd asd asda sd asd asd asd asda sd asd</h1>
+      <section class="container">
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="cplanet">
+            <div class="planet"></div>
+            <div class="planetname">
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="desc"></div>
+          <div class="ccmoon">
+            <div class="cmoon">
+              <div class="moon"></div>
+            </div>
+          </div>
+        </div>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+      </section>
     </div>
   </div>
 </template>  

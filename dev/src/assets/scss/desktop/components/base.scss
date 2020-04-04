@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Roboto Medium Italic', sans-serif;
+  font-family: $monument;
   font-weight: 500;
   position: relative;
   width: 100%;
@@ -120,4 +120,10 @@ a {
       text-decoration: none;
     }
   }
+}
+
+.page {
+  position: relative;
+  padding: em(60) em(90);
+  font-size: em(24);
 }

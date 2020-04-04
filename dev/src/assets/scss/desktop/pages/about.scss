@@ -1,0 +1,14 @@
+.page-about {
+  &__text {
+    font-size: em(14);
+    max-width: em(600);
+    padding-top: em(70);
+  }
+  .text {
+    line-height: em(28);
+    margin-bottom: em(20);
+  }
+  &__link {
+    text-decoration: underline;
+  }
+}
