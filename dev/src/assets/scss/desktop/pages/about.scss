@@ -1,8 +1,13 @@
 .page-about {
   &__text {
-    font-size: em(14);
+    font-size: em(12);
     max-width: em(600);
-    padding-top: em(70);
+    width: 100%;
+    &--wrapper {
+      display: flex;
+      justify-self: space-between;
+      padding-top: em(50);
+    }
   }
   .text {
     line-height: em(28);
@@ -10,5 +15,18 @@
   }
   &__link {
     text-decoration: underline;
+  }
+  &__exp {
+    &--wrapper {
+      padding-left: em(60);
+    }
+  }
+  &__list {
+    margin: em(15) 0 em(25);
+    &--item {
+      line-height: em(22);
+      font-size: em(11);
+      margin-bottom: em(10);
+    }
   }
 }

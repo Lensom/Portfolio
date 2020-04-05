@@ -103,6 +103,7 @@ $height) {
         font-size: 0.7vw;
         padding-top: 100%;
         z-index: 50;
+        line-height: em(24);
       }
     }
     .planetname {
@@ -143,7 +144,7 @@ $height) {
     }
     &:hover {
       flex-grow: 9;
-      transition: all 0.4s;
+      transition: all 1.5s;
       background: rgba(255, 255, 255, 0.1);
       .cplanet {
         transform: translateX(-11vw) !important;
@@ -163,7 +164,7 @@ $height) {
       }
       .desc:after {
         padding-top: 6%;
-        transition: padding-top 4s ease-in;
+        transition: padding-top 1.5s ease-in;
       }
     }
     &:nth-child(1) {
