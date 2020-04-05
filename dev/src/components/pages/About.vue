@@ -7,7 +7,7 @@
 
       <div class="page-about__text--wrapper">
         <div class="page-about__text">
-          <p class="text">
+          <p class="text" id="text">
             I am a Front End developer based in Ukraine. I have been developing since 2017 and still study and improve my skills.
             National and international customers have relied on me for development, implementation, and management of their digital products.
           </p>
@@ -52,6 +52,7 @@
 </template>  
 
 <script>
+import { TimeLineMax } from "gsap";
 export default {
   name: "About",
   mounted() {

@@ -8,12 +8,24 @@
         <span class="title__word">I'm Alexey.</span>
       </h1>
       <h2 class="subtitle">Front End Developer / Freelancer</h2>
+
+      <div class="ellipse-container">
+        <div class="ellipse thin"></div>
+        <div class="ellipse thick"></div>
+        <div class="ellipse yellow"></div>
+        <div class="circle1">
+          <router-link to="/contact">Ready for work</router-link>
+        </div>
+        <div class="circle2">
+          <router-link to="/works">Portfolio</router-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>  
 
 <script>
-import { TimeLineMax } from "gsap";
+// import { TimeLineMax } from "gsap";
 
 export default {
   name: "Index",
@@ -25,6 +37,29 @@ export default {
     tl.delay(0.8).from(".title__word", 1.5, {
       y: "100%",
       ease: Power4.easeOut
+    });
+    TweenMax.from(".ellipse-container", 1, {
+      delay: 2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".yellow", 1, {
+      delay: 3.5,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".circle1", 1, {
+      delay: 2.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".circle2", 1, {
+      delay: 2.6,
+      opacity: 0,
+      ease: Expo.easeInOut
     });
   },
   beforeDestroy() {
