@@ -7,8 +7,13 @@ import VueValidate from 'vee-validate'
 import { dictionary } from './validate';
 import Helpers from './tools/Helpers';
 import ShareLink from './tools/share';
+import VModal from 'vue-js-modal';
 
 import "./assets/scss/app.scss";
+
+
+Vue.use(VModal, { dynamic: true, dynamicDefaults: { clickToClose: false } })
+
 
 Vue.use(VueValidate, {
     locale: 'ru',
