@@ -214,3 +214,15 @@ h1,h2,h3,h4,h5,h6, p {
   font-size: em(16);
   margin: em(-3) em(3) ;
 }
+
+.cursorPhotos {
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.1);
+  opacity: 0;
+  margin: -100px 0 0 -100px;
+  background-size: cover;
+  z-index: 1;
+}
