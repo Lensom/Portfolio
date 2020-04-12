@@ -1,20 +1,26 @@
 <template>
   <div class="page page-works__wrapper">
     <div class="page-works">
-      <h1 class="title" @click="show" this.text="Whatever you want to show">
+      <h1 class="title">
         <span class="title__word">Some works:</span>
       </h1>
       <div class="cursor" ref="cursorPhotos"></div>
 
       <div class="project__list">
-        <div v-for="item in items" :key="item.id" class="project" @mousemove="showImage(item.id)">
+        <div
+          v-for="item in items"
+          :key="item.id"
+          class="project"
+          @mousemove="showImage(item.id)"
+          @click="show(item.text)"
+        >
           <h2 class="project__title">{{item.title}}</h2>
           <div class="project__category">{{item.category}}</div>
           <div class="project__overlay" @mousemove="onOverlay" mouseout="outOverlay"></div>
         </div>
       </div>
 
-      <modal name="hello-world">{{text}}</modal>
+      <modal name="project">{{text}}</modal>
     </div>
   </div>
 </template>  
@@ -24,28 +30,36 @@ export default {
   name: "Index",
   data() {
     return {
-      text: "adsad",
+      text: "",
       flag: false,
       items: [
         {
           id: 1,
-          title: "Motionland",
-          category: "Branding"
+          title: "Personal Impulse",
+          category: "Development",
+          link: "https://www.personalimpulse.nl/",
+          text: "Text about Personal"
         },
         {
           id: 2,
-          title: "Focus Reactive",
-          category: "Photography"
+          title: "Owhataday Studio",
+          category: "Development",
+          link: "http://owhataday.studio/",
+          text: "Text about Owhataday"
         },
         {
           id: 3,
-          title: "Aspect",
-          category: "Web Design"
+          title: "Fenit Protector",
+          category: "Development",
+          link: "https://www.fenix-protector.com/",
+          text: "Text about Protector"
         },
         {
           id: 4,
-          title: "Logomark",
-          category: "Branding"
+          title: "Deltavision",
+          category: "Development",
+          link: "https://deltavision.cz/",
+          text: "Text about Deltavision"
         }
       ]
     };
@@ -54,11 +68,12 @@ export default {
     this.$root.loading = true;
   },
   methods: {
-    show() {
-      this.$modal.show("hello-world");
+    show(text) {
+      this.$modal.show("project");
+      this.text = text;
     },
     hide() {
-      this.$modal.hide("hello-world");
+      this.$modal.hide("project");
     },
     showImage(index) {
       this.$refs.cursorPhotos.style.backgroundImage = `url(/static/img/image-${index}.jpg)`;
@@ -76,7 +91,6 @@ export default {
       this.flag = true;
       TweenLite.to(this.$refs.cursorPhotos, 0.3, { scale: 1, autoAlpha: 1 });
       this.moveCircle(event);
-      console.log("overlay");
     },
     outOverlay() {
       this.flag = false;

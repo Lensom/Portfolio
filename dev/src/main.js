@@ -8,6 +8,7 @@ import { dictionary } from './validate';
 import Helpers from './tools/Helpers';
 import ShareLink from './tools/share';
 import VModal from 'vue-js-modal';
+import VueI18n from 'vue-i18n'
 
 import "./assets/scss/app.scss";
 
@@ -23,6 +24,7 @@ Vue.use(VueValidate, {
     }
 });
 
+Vue.use(VueI18n)
 
 let Tp = new Typograf({ locale: ['ru', 'en-US'] });
 Vue.directive('typograph', {
