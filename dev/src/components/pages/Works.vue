@@ -24,6 +24,10 @@
         <modal name="project">
           <h3 class="v--modal__title">{{title}}</h3>
           <p class="v--modal__text">{{text}}</p>
+          <ul v-for="(technology, index) in this.technologies" :key="index">
+            <li>{{technology}}</li>
+          </ul>
+          <a :href="this.link" target="_blank">Go to Website</a>
         </modal>
       </transition>
     </div>
@@ -36,6 +40,9 @@ export default {
   data() {
     return {
       text: "",
+      title: "",
+      technologies: "",
+      link: "",
       flag: false,
       items: [
         {
@@ -109,6 +116,8 @@ export default {
       this.$modal.show("project");
       this.text = obj.text;
       this.title = obj.title;
+      this.technologies = obj.technologies;
+      this.link = obj.link;
     },
     hide() {
       this.$modal.hide("project");
