@@ -12,7 +12,7 @@
           :key="item.id"
           class="project"
           @mousemove="showImage(item.id)"
-          @click="show(item.text)"
+          @click="show(item)"
         >
           <h2 class="project__title">{{item.title}}</h2>
           <div class="project__category">{{item.category}}</div>
@@ -20,7 +20,12 @@
         </div>
       </div>
 
-      <modal name="project">{{text}}</modal>
+      <transition name="fade">
+        <modal name="project">
+          <h3 class="v--modal__title">{{title}}</h3>
+          <p class="v--modal__text">{{text}}</p>
+        </modal>
+      </transition>
     </div>
   </div>
 </template>  
@@ -38,28 +43,60 @@ export default {
           title: "Personal Impulse",
           category: "Development",
           link: "https://www.personalimpulse.nl/",
-          text: "Text about Personal"
+          text: "Text about Personal",
+          technologies: [
+            "HTML5/CSS3",
+            "JavaScript",
+            "jQuery",
+            "WordPress",
+            "Youtube API",
+            "Animation"
+          ]
         },
         {
           id: 2,
           title: "Owhataday Studio",
           category: "Development",
           link: "http://owhataday.studio/",
-          text: "Text about Owhataday"
+          text: "Text about Owhataday",
+          technologies: [
+            "HTML5/CSS3",
+            "JavaScript",
+            "jQuery",
+            "WordPress",
+            "AJAX",
+            "Animation"
+          ]
         },
         {
           id: 3,
-          title: "Fenit Protector",
+          title: "Fenix Protector",
           category: "Development",
           link: "https://www.fenix-protector.com/",
-          text: "Text about Protector"
+          text: "Text about Protector",
+          technologies: [
+            "HTML5/CSS3",
+            "JavaScript",
+            "jQuery",
+            "WordPress",
+            "AJAX",
+            "Animation"
+          ]
         },
         {
           id: 4,
-          title: "Deltavision",
+          title: "C&com",
           category: "Development",
-          link: "https://deltavision.cz/",
-          text: "Text about Deltavision"
+          link: "https://ccom.cz/",
+          text: "Text about ccom",
+          technologies: [
+            "HTML5/CSS3",
+            "JavaScript",
+            "jQuery",
+            "WordPress",
+            "AJAX",
+            "Animation"
+          ]
         }
       ]
     };
@@ -68,15 +105,16 @@ export default {
     this.$root.loading = true;
   },
   methods: {
-    show(text) {
+    show(obj) {
       this.$modal.show("project");
-      this.text = text;
+      this.text = obj.text;
+      this.title = obj.title;
     },
     hide() {
       this.$modal.hide("project");
     },
     showImage(index) {
-      this.$refs.cursorPhotos.style.backgroundImage = `url(/static/img/image-${index}.jpg)`;
+      this.$refs.cursorPhotos.style.backgroundImage = `url(/static/img/image-${index}.png)`;
     },
     moveCircle(event) {
       TweenLite.to(this.$refs.cursorPhotos, 0.5, {
@@ -109,3 +147,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
