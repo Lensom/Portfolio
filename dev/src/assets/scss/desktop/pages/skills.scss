@@ -169,8 +169,8 @@ $height) {
     }
     &:nth-child(1) {
       .desc:after {
-        content: "I am for performance, simplicity and integrity in my work. I'm a stickler for a slick build process, whether that's unit testing, linting integrations, tree shaking and so on. I write CSS modules predominately in SCSS.";
- white-space: pre-wrap;
+        content: "I am for performance, simplicity and integrity in my work. I'm a stickler for a slick build process, whether that's unit testing, linting integrations, tree shaking and so on. \a I also write CSS modules mainly in Stylus and SCSS.";
+        white-space: pre-wrap;
       }
       .cplanet {
         @include planet(6%,
@@ -208,9 +208,8 @@ $height) {
     }
     &:nth-child(2) {
       .desc:after {
-                content: "I build both small and large scale applications in JavaScript daily for desktop, tablet, mobile or server. Combined with an in-depth understanding of UX and design means I can take applications from start to finish. I can also provide consulting and advice on solutions.";
-
- white-space: pre-wrap;
+        content: "I build both small and large scale web applications in JavaScript daily for websites or server. Combined UX and design I can take applications from start to finish. /a I can also provide consulting and advice on solutions.On the web, I work with both vanilla and framework-based applications with strong capabilities in popular framework VueJs and web technologies such as GSAP.";
+        white-space: pre-wrap;
       }
       .cplanet {
         @include planet(18%,
@@ -275,10 +274,9 @@ $height) {
         height: 100%;
         background: #6FC0E4;
         &:after {
-          content: '';
+          content: 'I use VueJS when you need something more than a simple site. VueJS is used precisely for what he thought, to perform actions on the client side without unnecessary access to the remote server';
           display: block;
           border-radius: 6px;
-          content: " ";
           position: absolute;
           top: 0px;
           left: 0px;
@@ -286,7 +284,6 @@ $height) {
           height: 10px;
           background: none;
           z-index: 1;
-          -webkit-animation: world-animation 14s linear 0s infinite;
           animation: world-animation 14s linear 0s infinite;
         }
       }
@@ -318,9 +315,8 @@ $height) {
     }
     &:nth-child(4) {
       .desc:after {
-        content: 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and polar ice caps of Earth.
- \a The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature. Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan. \a There are ongoing investigations assessing the past habitability potential of Mars, as well as the possibility of extant life. Future astrobiology missions are planned, including the Mars 2020 and ExoMars rovers.';
- white-space: pre-wrap;
+        content: 'WordPress is perfect for creating and developing a personal blog or website. It has no rivals in terms of ease of use.';
+        white-space: pre-wrap;
       }
       .cplanet {
         @include planet(12%,
@@ -374,9 +370,8 @@ $height) {
         }
       }
       .desc:after {
-        content: 'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System combined. Jupiter is a gas giant, along with Saturn, with the other two giant planets, Uranus and Neptune, being ice giants. Jupiter was known to astronomers of ancient times. The Romans named it after their god Jupiter. When viewed from Earth, Jupiter can reach an apparent magnitude of −2.94, bright enough for its reflected light to cast shadows, and making it on average the third-brightest object in the night sky after the Moon and Venus.
- \a Jupiter is primarily composed of hydrogen with a quarter of its mass being helium, though helium comprises only about a tenth of the number of molecules. It may also have a rocky core of heavier elements, but like the other giant planets, Jupiter lacks a well-defined solid surface. Because of its rapid rotation, the planet s shape is that of an oblate spheroid (it has a slight but noticeable bulge around the equator). The outer atmosphere is visibly segregated into several bands at different latitudes, resulting in turbulence and storms along their interacting boundaries.';
- white-space: pre-wrap;
+        content: 'Beautiful animation on the site can not only improve the display, but also transform it. I use GSAP, anime.js and WOW animation for website';
+        white-space: pre-wrap;
       }
       .planet {
         position: absolute;
@@ -390,8 +385,8 @@ $height) {
     }
     &:nth-child(6) {
       .desc:after {
-        content: "It is important to make sure that your website performs smoothly without any glitch. Web performance defines the amount of time it takes for your site to load. If you’re having problems with performance times there are steps you can take to improve them such as optimizing images and minifying CSS and JavaScript.";
- white-space: pre-wrap;
+        content: "The speed and performance of sites is very important to users. If your site is too slow, you will not only lose visitors, but also potential customers. I try to optimize all web sites and web applications to speed up zugrazki. Such as Google, take into account the speed of the website in the search ranking.";
+        white-space: pre-wrap;
       }
       &:hover {
         .cplanet {
@@ -462,8 +457,8 @@ $height) {
     }
     &:nth-child(7) {
       .desc:after {
-        content: 'asd';
- white-space: pre-wrap;
+        content: 'To speed up the development of the site, I use the project builder Gulp, preprocessors for CSS like Stylus and SCSS. Use Visual Studio Code and also IDE.';
+        white-space: pre-wrap;
       }
       &:hover {
         &:after,
@@ -525,7 +520,7 @@ $height) {
     }
     &:nth-child(8) {
       .desc:after {
-        content: 'asd';
+        content: 'Constantly improving my skills. At the moment I am improving my skills in MongoDB, Mongoose, Node.js';
  white-space: pre-wrap;
       }
       .cplanet {
@@ -533,7 +528,7 @@ $height) {
         22%);
         .planetname {
           .line:after {
-            content: 'Development Tools';
+            content: 'Grind Away';
           }
         }
       }
