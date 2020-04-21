@@ -19,6 +19,10 @@
             You can
             <router-link class="page-about__link" to="/contact">contact me here</router-link>, or in social networks.
           </p>
+          <p class="text">
+            Also you can
+            <a href="#" class="page-about__link" download>download my CV</a>.
+          </p>
         </div>
         <div class="page-about__exp--wrapper">
           <div class="page-about__exp">
