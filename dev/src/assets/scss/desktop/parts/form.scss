@@ -1,0 +1,113 @@
+@mixin ease($time: 333ms, $attr: all, $curve: ease-in-out) {
+  transition: $attr $time $curve;
+}
+.form {
+  .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: em(15);
+    
+    $hover-label-width: em(100);
+    $hover-label-width-padding: em(120);
+    $placeholder-bumper: 1.5%;
+
+    // Label
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      justify-content: center;
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $black-2;
+      width: 100%;
+      font-size: 1em;
+      letter-spacing: 0.075em;
+      height: em(40);
+      padding: 0 em(15);
+      @include ease(333ms);
+    }
+
+    // Fields
+    input[type="text"],
+    textarea {
+      height: em(40);
+      border: none;
+      background: $white;
+      width: 100%;
+      margin: 0;
+      color: $black-2;
+      font-size: 1em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-left: $hover-label-width-padding;
+      &#msg {
+        height: em(40);
+        resize: none;
+        @include ease(333ms);
+      }
+
+      // Focus and JS Toggle Class
+      &:focus,
+      &.focused {
+        outline: none;
+
+        &#msg {
+          padding-bottom: em(100);
+        }
+
+        + label {
+          width: $hover-label-width;
+          background: $blueHover;
+          color: $white;
+        }
+      }
+
+      // JS Toggle Class
+      &.focused {
+        + label {
+          color: $blueHover;
+        }
+      }
+    }
+
+    // Field Hover
+    &:hover {
+      label {
+        width: $hover-label-width;
+        background: $black-2;
+        color: white;
+      }
+    }
+    textarea {
+      padding-top: em(13);
+      padding-right: em(18);
+    }
+  }
+}
+
+.btn--submit {
+  background: $blueHover;
+  color: $white;
+  appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: em(12) em(30);
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  cursor: none;
+  @include ease;
+
+  &:hover {
+    background: $black-2;
+    color: $blueHover;
+  }
+
+  &:focus {
+    outline: none;
+    background: $blueHover;
+  }
+}
