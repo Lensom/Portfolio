@@ -1,3 +1,23 @@
 .v--modal {
   color: black;
+  padding: em(16);
+  &__title {
+    font-size: em(28);
+    margin-bottom: em(10);
+  }
+  &__text {
+    font-size: em(16);
+  }
+  &__subtitle {
+    margin: em(20) 0 em(10);
+  }
+  &__list {
+    li {
+      margin-bottom: em(10);
+      font-size: em(14);
+    }
+  }
+  &__btn {
+    text-align: center;
+  }
 }

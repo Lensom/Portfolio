@@ -21,13 +21,16 @@
       </div>
 
       <transition name="fade">
-        <modal name="project">
+        <modal name="project" :width="900" :height="500">
           <h3 class="v--modal__title">{{title}}</h3>
           <p class="v--modal__text">{{text}}</p>
-          <ul v-for="(technology, index) in this.technologies" :key="index">
-            <li>{{technology}}</li>
+          <h4 class="v--modal__subtitle">Used technologies:</h4>
+          <ul class="v--modal__list">
+            <li v-for="(technology, index) in this.technologies" :key="index">{{technology}}</li>
           </ul>
-          <a :href="this.link" target="_blank">Go to Website</a>
+          <div class="v--modal__btn">
+            <a class="btn--submit" :href="this.link" target="_blank" rel="nofollow">Go to Website</a>
+          </div>
         </modal>
       </transition>
     </div>
@@ -50,7 +53,7 @@ export default {
           title: "Personal Impulse",
           category: "Development",
           link: "https://www.personalimpulse.nl/",
-          text: "Text about Personal",
+          text: "WordPress Blog for Personal Trainer Deventer",
           technologies: [
             "HTML5/CSS3",
             "JavaScript",
@@ -65,7 +68,7 @@ export default {
           title: "Owhataday Studio",
           category: "Development",
           link: "http://owhataday.studio/",
-          text: "Text about Owhataday",
+          text: "Wordpress Blog for Wedding Studio",
           technologies: [
             "HTML5/CSS3",
             "JavaScript",
@@ -80,7 +83,7 @@ export default {
           title: "Fenix Protector",
           category: "Development",
           link: "https://www.fenix-protector.com/",
-          text: "Text about Protector",
+          text: "Online Store for ammunition store",
           technologies: [
             "HTML5/CSS3",
             "JavaScript",
@@ -95,7 +98,7 @@ export default {
           title: "C&com",
           category: "Development",
           link: "https://ccom.cz/",
-          text: "Text about ccom",
+          text: "Blog for online marketing company",
           technologies: [
             "HTML5/CSS3",
             "JavaScript",

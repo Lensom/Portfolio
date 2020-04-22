@@ -13,6 +13,10 @@
     background-size: cover;
     z-index: 1;
   }
+  .btn--submit {
+    padding: em(6) em(15);
+    font-size: .8em;
+  }
 }
 
 .project {

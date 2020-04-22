@@ -21,6 +21,10 @@
         </div>
       </div>
     </div>
+
+    <div class="page-home__alert">
+      <p class="text">The site is still under construction.</p>
+    </div>
   </div>
 </template>  
 
@@ -60,6 +64,12 @@ export default {
       delay: 2.6,
       opacity: 0,
       ease: Expo.easeInOut
+    });
+
+    tl.delay(0.3).from(".page-home__alert", 0.5, {
+      y: "100%",
+      opacity: 0,
+      ease: Power4.easeOut
     });
   },
   beforeDestroy() {

@@ -1,3 +1,14 @@
+.page-home {
+  &__alert {
+    position: absolute;
+    bottom: em(12);
+    left: em(106);
+    border: em(1) solid $white;
+    padding: em(2) em(10);
+    font-size: em(14);
+  }
+}
+
 .ellipse-container {
   width: em(758);
   height: em(758);
