@@ -113,9 +113,6 @@ a {
   &:focus {
     outline: none !important;
   }
-  &:hover {
-    //text-decoration: underline;
-  }
   &.underline {
     text-decoration: underline;
     &:hover {

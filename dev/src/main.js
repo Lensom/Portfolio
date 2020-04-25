@@ -67,6 +67,22 @@ new Vue({
         window.addEventListener('orientationchange', setDocHeight)
 
         setDocHeight();
+
+        // Get orientation mobile
+        function getOrientation() {
+            let orientation = window.innerWidth > window.innerHeight ? "Landscape" : "Portrait";
+            return orientation == 'Landscape'
+                ? document.querySelector('body').style.overflow = 'auto'
+                : document.querySelector('body').style.overflow = 'hidden'
+        }
+
+        window.onresize = function () {
+            getOrientation();
+        }
+
+        getOrientation();
+
+
     },
-    components: { App }
+    components: { App },
 });
