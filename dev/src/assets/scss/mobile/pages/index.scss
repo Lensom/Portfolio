@@ -1,0 +1,43 @@
+.page {
+  padding: em(50) em(15);
+  &-home {
+    &__alert {
+      left: em(15);
+      bottom: em(20);
+    }
+  }
+}
+
+.title {
+  font-size: em(60);
+}
+
+.subtitle {
+  margin: em(5) em(2.3);
+}
+
+.ellipse-container {
+  top: 98%;
+  left: 122%;
+}
+
+.circle2 {
+  top: 11.125em;
+  left: 1.4375em;
+}
+
+@media screen and (max-width: 768px) {
+  .page-home {
+    &__alert {
+      font-size: em(10)
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-home {
+    &__alert {
+      font-size: em(8)
+    }
+  }
+}

@@ -1,11 +1,13 @@
 .page-home {
   &__alert {
-    position: absolute;
+    position: fixed;
     bottom: em(12);
     left: em(106);
     border: em(1) solid $white;
     padding: em(2) em(10);
     font-size: em(14);
+    z-index: 1;
+    background: $black;
   }
 }
 

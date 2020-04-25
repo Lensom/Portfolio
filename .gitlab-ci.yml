@@ -4,9 +4,9 @@ deploy_dev:
         - dev
     script:
         - rsync -ua $CI_PROJECT_DIR/* $DEV_PROJECT_DIR/
-        - chown -R tiroxin:webusers $DEV_PROJECT_DIR
+        - chown -R portfolio:webusers $DEV_PROJECT_DIR
     environment:
         name: development
-        url: https://dev-tiroxin.mdv.pw
+        url: google.com
     only:
         - dev

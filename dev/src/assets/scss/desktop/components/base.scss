@@ -10,6 +10,8 @@ html, body {
   color: $white;
   -webkit-overflow-scrolling: touch;
   cursor: none;
+  overflow: hidden;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .content {

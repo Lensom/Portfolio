@@ -1,0 +1,13 @@
+.preloader__line {
+  &--first {
+    left: -1px;
+  }
+  &--second {
+    right: -1px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+}

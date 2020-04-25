@@ -1,5 +1,8 @@
 <template>
-  <header class="header" :class="{fadeInLeft: this.$root.animation}">
+  <header
+    class="header"
+    :class="[this.$root.animation && !this.$root.isMobile ? fadeInLeft : fadeInDown, {open: openMobile}]"
+  >
     <div class="header__wrapper">
       <div class="logotype">
         <router-link to="/">
@@ -8,7 +11,7 @@
       </div>
       <div class="nav__wrapper">
         <ul class="nav__menu">
-          <li class="nav__menu--item" v-for="item in social" :key="item.text">
+          <li class="nav__menu--item" v-for="item in social" :key="item.text" @click="openMenu">
             <router-link :to="item.link" class="nav__menu--link">
               <i class="icon" :class="item.icon"></i>
               <span class="helper">{{item.text}}</span>
@@ -46,6 +49,14 @@
           </li>
         </ul>
       </div>
+      <div id="nav-icon2" class="mobile-icon" @click="openMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
 </template>
@@ -57,6 +68,9 @@ export default {
   name: "Header",
   data() {
     return {
+      fadeInLeft: "fadeInLeft",
+      fadeInDown: "fadeInDown",
+      openMobile: false,
       social: [
         {
           text: "Home",
@@ -88,6 +102,11 @@ export default {
   },
   components: {
     logotype
+  },
+  methods: {
+    openMenu: function() {
+      this.openMobile = !this.openMobile;
+    }
   }
 };
 </script>

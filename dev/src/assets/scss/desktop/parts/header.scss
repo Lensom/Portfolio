@@ -16,7 +16,10 @@
   }
   &.fadeInLeft {
     animation: 1s fadeInLeft;
-    }
+  }
+  &.fadeInDown {
+    animation: 1s fadeInDown;
+  }
 }
 .logotype {
   svg {

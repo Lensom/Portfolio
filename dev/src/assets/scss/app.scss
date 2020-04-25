@@ -26,6 +26,7 @@
 @import "desktop/parts/cursor";
 @import "desktop/parts/mixins";
 @import "desktop/parts/form";
+@import "desktop/parts/mobileMenu";
 
 
 //Mobile
@@ -39,6 +40,8 @@
   //parts
   @import "mobile/parts/header";
   @import "mobile/parts/footer";
+  @import "mobile/parts/preloader";
+  @import "mobile/parts/mobileMenu";
 }
 
 @import "desktop/components/media";
